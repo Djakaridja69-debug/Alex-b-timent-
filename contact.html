@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        body{
+            background: linear-gradient(to right, skyblue, pink, skyblue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: monter 1s ease-out;
+            font-family: Arial, sans-serif;
+        }
+        @keyframes monter {
+            from { opacity: 0; transform: translateY(50px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        a { text-decoration: none; color: black; }
+        a:hover { color: #FF69B4; }
+        .liste{
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            width: 400px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        .formulaire label{
+            display: block;
+            margin-top: 10px;
+        }
+        .formulaire input{
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .titre{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        button{
+            background-color: white;
+            border: 1px solid #FF69B4;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 15px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button:hover{
+            background-color: #87CEEB;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.8s;
+            transform: scale(0.95);
+        }
+        #message{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <section class="liste">
+        <!-- method + action pointent vers ton script PHP -->
+        <form class="formulaire" id="formInscription" method="POST" action="inscription.php">
+            <h2 class="titre">DEMANDE</h2>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+            <label for="demande">Entrez votre demande ou votre préoccupation.</label>
+            <input class="demande" type="demande" id="password" name="demande" placeholder="préoccupation ou demande" required >
+
+            <button type="submit"><a href="mailto:siluedjkaridja69@gmail.com">envoyer</a></button>
+            <p id="message"></p>
+        </form>
+
+        <div class="retour">
+            <button type="button" onclick="window.location.href='index.html'"> <a href="index.html">Retour</a></button>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+@media screen {
+    
+}
+@media (max-width: 768px) {
+    /* adaptations pour téléphone/tablette */
+}
+/** pour la couleur du corps **/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    animation: monter 0.8s ease-out;
+    min-height: 100vh;
+    animation: monter 2s ease-out;
+}
+@keyframes monter {
+    from { 
+        opacity: 0; 
+        transform: translateY(50px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+/*,#E5F0FE,#49719C,#DC8E5C,#9AAE9B,#AEA9AD,#6C4B81*/
+header{
+    background-color:#EAEEEB;
+    padding: 15px 25px;
+    gap: 50px;
+    align-items:center;
+    text-align: center;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    list-style: none;
+    position: sticky;
+    z-index: 1000;
+}
+.logo{
+    text-align: center;
+    display: flex;
+}
+.logo-ico{
+    width:45px;
+    background: #FF8C00;
+    font-size: 35px;
+    border-radius: 5px;
+}
+.logo{
+text-decoration: none;
+}
+.logo:hover{
+    text-decoration: none;
+}
+.ALEX{
+    color:#003566;
+    font-size: 30px;
+    font-weight: 800;
+}
+.ALEX:hover{
+    color:#480058;
+    opacity: 0.5;
+    transition:0.60s;
+}
+.BAT{
+    color: #FF8C00;
+    font-size:30px;
+    font-weight: 800;
+}
+.BAT:hover{
+    opacity: 0.5;
+    transition: 0.60s;
+    color:#480058;
+}
+.realiser{
+    width: 45px;
+    background:#FF8C00;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.realiser:hover{
+    text-decoration: none;
+    color:white;
+    transition:0.60s;
+    opacity: 0.55;
+}
+.contact{
+    width: 45px;
+    background:#003566;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.contact:hover{
+    text-decoration: none;
+    color:white;
+    transition:0.60s;
+    opacity: 0.75;
+}
+.conteneur{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.carte{
+    gap: 20px;
+    display: flex;
+    padding:50px;
+    background-color:#ADEEC5;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.90s
+}
+.carte:hover{
+    transform: translateY(-10px) scale(1.03) rotate(1deg);
+    transition: 0.90s;
+}
+.carte img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.carte img:hover{
+    transform: scale(1.1);
+    transition: 0.80s;
+}
+div img{
+    
+    border-radius: 13px;
+}
+.texte1{
+    font-width: 30px;
+    font-weight:700;
+}
+.footer1{
+    background-color: #FF8C00;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    color: white;
+    justify-content: space-between;
+    top: 0;
+    padding: 15px 25px;
+}
+div .info{
+    color: #003566;
+}
+.bouton{
+    border:3px solid white;
+    background-color: #FF8C00;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition:0.8s ;
+}
+.bouton:hover{
+    transition: 0.8s;
+    transform: scale(0.95);
+}
+i{
+    color: white;
+    font-size: 25px;
+}
+.reseaux{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
